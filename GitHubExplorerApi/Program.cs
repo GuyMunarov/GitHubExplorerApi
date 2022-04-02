@@ -27,6 +27,7 @@ builder.Services.AddDbContext<DataContext>(options =>
     .EnableSensitiveDataLogging().UseQueryTrackingBehavior(QueryTrackingBehavior.TrackAll);
 });
 
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
 {
@@ -54,6 +55,12 @@ builder.Services.AddCors(opt =>
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dataContext = scope.ServiceProvider.GetRequiredService<DataContext>();
+    dataContext.Database.Migrate();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

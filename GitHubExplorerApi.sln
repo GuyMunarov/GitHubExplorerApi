@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubExplorerApi", "GitHubExplorerApi\GitHubExplorerApi.csproj", "{4DBF780C-9FF7-4B22-B2E1-E5491C221177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{28D60695-C7F0-411D-9253-8231F91E0A32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DBF780C-9FF7-4B22-B2E1-E5491C221177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBF780C-9FF7-4B22-B2E1-E5491C221177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBF780C-9FF7-4B22-B2E1-E5491C221177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBF780C-9FF7-4B22-B2E1-E5491C221177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D60695-C7F0-411D-9253-8231F91E0A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D60695-C7F0-411D-9253-8231F91E0A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D60695-C7F0-411D-9253-8231F91E0A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D60695-C7F0-411D-9253-8231F91E0A32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3E6E51B-E676-4195-BE8B-A0FEEB6F3C72}
+	EndGlobalSection
+EndGlobal
